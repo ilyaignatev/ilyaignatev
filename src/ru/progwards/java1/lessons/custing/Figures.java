@@ -1,3 +1,5 @@
+package ru.progwards.java1.lessons.custing;
+
 public class Figures {
     static final double PI = 3.14;
     public static double circle(double d){
