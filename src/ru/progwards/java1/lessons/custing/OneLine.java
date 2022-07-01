@@ -14,10 +14,10 @@ public class OneLine {
         return "Сумма " + n + " и " + m + " равна " + (n + m);
     }
     public static void main(String[] args) {
-        System.out.println(strValue(" " " "));
-        System.out.println(intValue("radius",123));
-        System.out.println(square(2));
-        System.out.println(sum(2,3));
+        strValue();
+        intValue();
+        square();
+        sum();
     }
 }
 
