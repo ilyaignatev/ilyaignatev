@@ -22,11 +22,11 @@ public class Figures {
         return triangle(p)/circle(p);
     }
     public static void main(String[] args) {
-        circle();
-        square();
-        triangle();
-        squareVsTraiange();
-        squareVsCircle();
-        triangleVsCircle();
+        circle(2.0);
+        square(3.0);
+        triangle(22.0);
+        squareVsTraiange(2.0);
+        squareVsCircle(4.0);
+        triangleVsCircle(6.0);
     }
 }
