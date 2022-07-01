@@ -9,15 +9,24 @@ public class Figures {
         return n * n;
     }
     public static Double triangle(){
-        double a = 10.0;
-        double b = 10.0;
-        double c = 5.0;
-        double p = 0.5*(a + b + c);
-        return Math.sqrt(p* (p - a) * (p - b) * (p - c));
+        Double p = 0.5*(k + k + k);
+        return Math.sqrt(p* (p - k) * (p - k) * (p - k));
+    }
+    public static double squareVsTraiange(double p){
+        return square(p)/triangle(p);
+    }
+    public static double squareVsCircle(double p){
+        return square(p)/circle(p);
+    }
+    public static double triangleVsCircle(double p){
+        return triangle(p)/circle(p);
     }
     public static void main(String[] args) {
-        System.out.println(circle(2.0));
-        System.out.println(square(3.0));
-        System.out.println(triangle());
+        circle();
+        square();
+        triangle();
+        squareVsTraiange();
+        squareVsCircle();
+        triangleVsCircle();
     }
 }
