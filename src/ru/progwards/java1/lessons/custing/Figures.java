@@ -8,7 +8,7 @@ public class Figures {
     public static double square(double n){
         return n * n;
     }
-    public static Double triangle(){
+    public static Double triangle(double k){
         Double p = 0.5*(k + k + k);
         return Math.sqrt(p* (p - k) * (p - k) * (p - k));
     }
