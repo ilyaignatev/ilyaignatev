@@ -9,8 +9,8 @@ public class Figures {
         return n * n;
     }
     public static Double triangle(double k){
-        Double p = 0.5*(k + k + k);
-        return Math.sqrt(p* (p - k) * (p - k) * (p - k));
+        Double p = (k + k + k) / 2;
+        return Math.sqrt(p * (p - k) * (p - k) * (p - k));
     }
     public static double squareVsTraiange(double p){
         return square(p)/triangle(p);
@@ -22,11 +22,11 @@ public class Figures {
         return triangle(p)/circle(p);
     }
     public static void main(String[] args) {
-        circle();
-        square();
-        triangle();
-        squareVsTraiange();
-        squareVsCircle();
-        triangleVsCircle();
+        circle(2);
+        square(2);
+        triangle(2);
+        squareVsTraiange(2);
+        squareVsCircle(2);
+        triangleVsCircle(2);
     }
 }
