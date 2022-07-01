@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.custing;
 public class Figures {
     static final double PI = 3.14;
     public static double circle(double d){
-        return 4 * PI * (d*2);
+        return 4 * PI * Math.pow(d,2);
     }
     public static double square(double n){
         return n * n;
