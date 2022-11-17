@@ -28,7 +28,7 @@ public class Count {
         Count count1 = new Count(10);
         while (true) {
             if (count1.dec()) {
-                System.out.println("count πΰβεν 0");
+                System.out.println("count Ρ€Π°Π²ΠµΠ½ 0");
                 break;
             }
         }
