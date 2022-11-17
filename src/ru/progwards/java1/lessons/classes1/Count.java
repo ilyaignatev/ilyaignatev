@@ -2,24 +2,24 @@ package ru.progwards.java1.lessons.classes1;
 
 public class Count {
     int count;
-
-    public Count(int count) {
+    public Count(){
         count = 0;
     }
-
-    public int getCount() {
+    public Count(int count){
+        this.count = count;
+    }
+    public int getCount(){
         return count;
     }
-
-    public void inc() {
+    public void inc(){
         count++;
     }
-
-    public boolean dec() {
+    public boolean dec(){
         count--;
-        if (count <= 0) {
-            return true;
-        } else {
+        if(count <= 0){
+             return true;
+        }
+        else{
             return false;
         }
     }
