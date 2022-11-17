@@ -28,7 +28,7 @@ public class Count {
         Count count1 = new Count(10);
         while (true) {
             if (count1.dec()) {
-                System.out.println("count = 0");
+                System.out.println("count равен 0");
                 break;
             }
         }
