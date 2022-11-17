@@ -7,10 +7,6 @@ public class Count {
         count = 0;
     }
 
-    private int count(int i) {
-        this.count = count;
-    }
-
     public int getCount() {
         return count;
     }
