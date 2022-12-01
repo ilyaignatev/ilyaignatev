@@ -7,9 +7,9 @@ public class Time {
     int minutes;
     int seconds;
     public Time(){
-        int hours = 0;
-        int minutes = 0;
-        int seconds = 0;
+        hours = 0;
+        minutes = 0;
+        seconds = 0;
     }
     public Time(int hours,int minutes,int seconds){
         this.hours = hours;
@@ -20,6 +20,10 @@ public class Time {
         LocalTime time = LocalTime.of(1, 30, 5);
         return String.valueOf(time);
     }
+    public int toSeconds(){
+        return hours * 60 * 60 + minutes * 60 + seconds;
+    }
+
 
     public static void main(String[] args) {
 
