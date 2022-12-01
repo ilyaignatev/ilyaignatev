@@ -18,7 +18,8 @@ public class Time {
     }
     public String toString(){
         LocalTime time = LocalTime.of(1, 30, 5);
-        return String.valueOf(time);
+        System.out.println(time);
+        return null;
     }
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
