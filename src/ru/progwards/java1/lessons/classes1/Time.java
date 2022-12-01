@@ -24,16 +24,15 @@ public class Time {
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
-    public int secondsBetween(Time time){
-        Time time1 = new Time(4,5,20);
-        Time time2 = new Time(6,16,35);
-        long seconds = (time2.getTime() - time1.getTime())/1000;
-        System.out.println(seconds);
-        return (int) seconds;
+    public long secondsBetween(Time time){
+        Time oldtime = new Time(4,5,20);
+        Time newtime = new Time(6,16,35);
+        long second = (newtime.secondsBetween(6,16,35)- oldtime.secondsBetween(4,5,20))/1000;
+        return second;
     }
 
-    private long getTime() {
-        return seconds;
+    private long secondsBetween(int i, int i1, int i2) {
+        return 0;
     }
 
     public static void main(String[] args) {
