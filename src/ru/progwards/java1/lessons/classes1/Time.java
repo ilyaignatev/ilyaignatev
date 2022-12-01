@@ -32,7 +32,7 @@ public class Time {
     }
 
     private long getTime() {
-        return 0;
+        return seconds;
     }
 
     public static void main(String[] args) {
