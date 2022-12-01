@@ -28,10 +28,12 @@ public class Time {
         Time oldtime = new Time(4,5,20);
         Time newtime = new Time(6,16,35);
         long second = (newtime.secondsBetween(6,16,35)- oldtime.secondsBetween(4,5,20))/1000;
-        return second;
+        long l = second;
+        int i = (int)l;
+        return i;
     }
 
-    private long secondsBetween(int i, int i1, int i2) {
+    private int secondsBetween(int i, int i1, int i2) {
         return 0;
     }
 
