@@ -33,8 +33,8 @@ public class Time {
         return i;
     }
 
-    private int secondsBetween(int i, int i1, int i2) {
-        return 0;
+    private long secondsBetween(int i, int i1, int i2) {
+        return i;
     }
 
     public static void main(String[] args) {
