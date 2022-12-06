@@ -21,7 +21,7 @@ public class Time {
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
-    public long secondsBetween(Time time){
+    public int secondsBetween(Time time){
     return 0;
     }
 
