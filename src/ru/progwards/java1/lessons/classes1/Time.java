@@ -22,7 +22,7 @@ public class Time {
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
     public int secondsBetween(Time time){
-    return 0;
+    return (hours *60 * 60 + minutes * 60 + seconds) + ((this.hours+this.minutes+this.seconds)*3600);
     }
 
     public static void main(String[] args) {
