@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.classes1;
 
-import java.time.LocalTime;
 
 public class Time {
     int hours;
@@ -27,16 +26,7 @@ public class Time {
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
     public long secondsBetween(Time time){
-        Time oldtime = new Time(4,5,20);
-        Time newtime = new Time(6,16,35);
-        long second = (newtime.secondsBetween(6,16,35)- oldtime.secondsBetween(4,5,20))/1000;
-        long l = second;
-        int i = (int)l;
-        return i;
-    }
 
-    private long secondsBetween(int i, int i1, int i2) {
-        return i;
     }
 
     public static void main(String[] args) {
