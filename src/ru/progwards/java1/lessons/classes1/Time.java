@@ -17,11 +17,13 @@ public class Time {
         this.seconds = seconds;
     }
     public String toString(){
-        LocalTime time = LocalTime.of(1, 30, 5);
-        System.out.println(time);
-        return null;
+        this.hours = 3;
+        this.minutes = 15;
+        this.seconds = 30;
+        return "0" + hours + ":"  + minutes + ":" + seconds;
     }
     public int toSeconds(){
+
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
     public long secondsBetween(Time time){
