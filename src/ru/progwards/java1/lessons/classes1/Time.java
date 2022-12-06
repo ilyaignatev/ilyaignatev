@@ -16,7 +16,7 @@ public class Time {
         this.seconds = seconds;
     }
     public String toString(){
-        return hours + ":"  + minutes + ":" + seconds;
+        return String.valueOf(hours + minutes + seconds);
     }
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
