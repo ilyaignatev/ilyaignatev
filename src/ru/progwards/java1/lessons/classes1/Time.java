@@ -24,7 +24,7 @@ public class Time {
     public int secondsBetween(Time time) {
         Time t1 = new Time(4,40,50);
         Time t2 = new Time(6,40,35);
-        return (t2.secondsBetween(t2) - t1.secondsBetween(t1));
+        return t2.secondsBetween(t2) - t1.secondsBetween(t1);
     }
     public static void main(String[] args) {
     }
