@@ -21,11 +21,13 @@ public class Time {
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
-    public int secondsBetween(Time time) {
-    int sec1 = hours * 3600 + minutes * 60 + seconds;
-    int sec2 = this.hours*3600 + this.minutes * 60 + this.seconds;
-        return sec2 - sec1;
+    public int secondsBetween(Time time, Time time2) {
+    Time time1 = new Time(4,30,50);
+        time2 = new Time(7, 50, 30);
+    return secondsBetween(time1,time2);
     }
+
+
     public static void main(String[] args) {
     }
 }
