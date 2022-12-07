@@ -16,15 +16,17 @@ public class Time {
         this.seconds = seconds;
     }
     public String toString(){
+        if(hours<0){
+            return String.valueOf("0"+hours + ":" + "0" +minutes + ":" + "0" + seconds);
+        }
         return String.valueOf(hours + ":" + minutes + ":" + seconds);
     }
     public int toSeconds(){
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
-    public int secondsBetween(Time time){
-    return (hours *60 * 60 + minutes * 60 + seconds) + ((this.hours+this.minutes+this.seconds)*3600);
+    public int secondsBetween(Time time) {
+        return 0;
     }
-
     public static void main(String[] args) {
     }
 }
