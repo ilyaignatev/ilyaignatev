@@ -8,7 +8,7 @@ public class ComplexNum {
         this.b = b;
     }
     public String toString(){
-        return a + "+" + b + "+" + "i";
+        return a + "+" + b + "i";
     }
     public ComplexNum add(ComplexNum num){
         ComplexNum num1 = new ComplexNum(4,5);
