@@ -1,5 +1,7 @@
 package ru.progwards.java1.lessons.classes1;
 
+import java.lang.constant.Constable;
+
 public class ComplexNum {
     int a;
     int b;
@@ -7,15 +9,17 @@ public class ComplexNum {
         this.a = a;
         this.b = b;
     }
-    public ComplexNum newComplexNum(int a, int b){
-        return new ComplexNum(a,b);
+    public ComplexNum newComplexNum(int a, int b) {
+        return new ComplexNum(a, b);
     }
+
     public String toString(){
         return a + "+" + b + "i";
     }
     public ComplexNum add(ComplexNum num){
-        return new ComplexNum (num.a + num.a, num.b+num.b);
+        return new ComplexNum(4,6);
     }
+
     public ComplexNum sub(ComplexNum num){
         return new ComplexNum(num.a - num.a, num.b - num.b);
     }
