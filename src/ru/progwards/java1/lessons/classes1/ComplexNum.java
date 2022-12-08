@@ -21,7 +21,7 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num){
-        return new ComplexNum(num.a - num.a, num.b - num.b);
+        return new ComplexNum(num.a - this.a, num .b - this.b);
     }
     public ComplexNum mul(ComplexNum num){
         ComplexNum num3 = new ComplexNum(3,5);
