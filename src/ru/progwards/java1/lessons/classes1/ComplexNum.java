@@ -7,12 +7,14 @@ public class ComplexNum {
         this.a = a;
         this.b = b;
     }
+    public ComplexNum newComplexNum(int a, int b){
+        return new ComplexNum(a,b);
+    }
     public String toString(){
         return a + "+" + b + "i";
     }
-    public ComplexNum add(ComplexNum num){
-        ComplexNum num1 = new ComplexNum(4,5);
-        return num1;
+    public ComplexNum add(ComplexNum num1, ComplexNum num2){
+        return new ComplexNum (num1.a + num2.a, num1.b+num2.b);
     }
     public ComplexNum sub(ComplexNum num){
         ComplexNum num2 = new ComplexNum(3,5);
