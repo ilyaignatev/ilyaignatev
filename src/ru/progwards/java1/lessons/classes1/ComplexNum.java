@@ -27,8 +27,9 @@ public class ComplexNum {
         return new ComplexNum(a*c-b*d,b*c + a*d);
     }
     public ComplexNum div(ComplexNum num){
-        ComplexNum num4 = new ComplexNum(3,5);
-        return num4;
+        int a = num.a, b = num.b, c = this.a, d = this.b;
+
+        return new ComplexNum((a*c+b*d)/(c*c+d*d), (b*c-a*d)/(c*c+d*d));
     }
 
     public static void main(String[] args) {
