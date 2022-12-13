@@ -22,7 +22,7 @@ public class ComplexNum {
         return new ComplexNum(this.a-num.b , this.a -= num.b);
     }
     public ComplexNum mul(ComplexNum num){
-        int a = num.a, b = this.a, c = num.b, d = this.b;
+        int a = num.a, b = num.b, c = this.a, d = this.b;
         return new ComplexNum(a*c-b*d,b*c + a*d);
     }
     public ComplexNum div(ComplexNum num){
@@ -33,6 +33,7 @@ public class ComplexNum {
     public static void main(String[] args) {
         ComplexNum a = new ComplexNum(99,1);
         System.out.println(a.sub(a));
+        System.out.println(a.mul(a));
 
     }
 }
