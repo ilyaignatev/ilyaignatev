@@ -23,7 +23,7 @@ public class ComplexNum {
         return new ComplexNum(num.a - 0, num .b + this.b);
     }
     public ComplexNum mul(ComplexNum num){
-        return new ComplexNum(num.a * 0, num .a * this.b);
+        return new ComplexNum(num.a * num.a, num .a + this.b);
     }
     public ComplexNum div(ComplexNum num){
         ComplexNum num4 = new ComplexNum(3,5);
