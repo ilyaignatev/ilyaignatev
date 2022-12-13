@@ -32,11 +32,6 @@ public class ComplexNum {
     }
 
     public static void main(String[] args) {
-        ComplexNum a = new ComplexNum(99,99);
-        ComplexNum b = new ComplexNum(1,1);
-        System.out.println(a.add(a,b));
-        System.out.println(a.sub(a,b));
-        System.out.println(a.mul(a,b));
-        System.out.println(a.div(a,b));
+
     }
 }
