@@ -19,7 +19,8 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num){
-        return new ComplexNum(this.a-num.b , this.a -= num.b);
+        int a = num.a, b = num.b, c = this.a, d = this.b;
+        return new ComplexNum(a-c,b-d);
     }
     public ComplexNum mul(ComplexNum num){
         int a = num.a, b = num.b, c = this.a, d = this.b;
