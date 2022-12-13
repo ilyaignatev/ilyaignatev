@@ -20,10 +20,10 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num){
-        return new ComplexNum(num.a - this.b, num .b - this.a);
+        return new ComplexNum(num.a - this.a, num .b - this.b);
     }
     public ComplexNum mul(ComplexNum num){
-        return new ComplexNum(num.a * this.b, num .b * this.a);
+        return new ComplexNum(num.a * this.a, num .b * this.b);
     }
     public ComplexNum div(ComplexNum num){
         ComplexNum num4 = new ComplexNum(3,5);
