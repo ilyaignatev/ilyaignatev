@@ -28,7 +28,7 @@ public class ComplexNum {
     }
     public ComplexNum div(ComplexNum num1, ComplexNum num2){
         int a = num1.a, b = num1.b, c = num2.a, d = num2.b;
-        return newComplexNum((a*c + b * d)/(c*c + d * d) , ((b*c - a * d)/(c*c+d*d)));
+        return newComplexNum((a*c + b * d)/(c*c + d * d) , (b*c - a * d)/(c*c+d*d));
     }
 
     public static void main(String[] args) {
