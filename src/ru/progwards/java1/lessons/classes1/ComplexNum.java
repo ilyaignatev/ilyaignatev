@@ -19,7 +19,7 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num){
-        return new ComplexNum(this.a-num.b , this.b - num.a);
+        return new ComplexNum(this.a-num.b , this.b + num.a);
     }
     public ComplexNum mul(ComplexNum num){
         int a = num.a, b = this.a, c = num.b, d = this.b;
@@ -31,7 +31,7 @@ public class ComplexNum {
     }
 
     public static void main(String[] args) {
-        ComplexNum a = new ComplexNum(99,99);
+        ComplexNum a = new ComplexNum(99,1);
         System.out.println(a.sub(a));
 
     }
