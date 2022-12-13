@@ -27,7 +27,7 @@ public class ComplexNum {
         return new ComplexNum(a*c-b*d,b*c + a*d);
     }
     public ComplexNum div(ComplexNum num){
-        int a = num.a, b = num.b, c = this.a, d = this.b;
+        int a = num.a, b = this.b, c = this.a, d = num.b;
 
         return new ComplexNum((a*c+b*d)/(c*c+d*d), (b*c-a*d)/(c*c+d*d));
     }
@@ -35,7 +35,7 @@ public class ComplexNum {
     public static void main(String[] args) {
         ComplexNum a = new ComplexNum(99,1);
         System.out.println(a.sub(a));
-        System.out.println(a.mul(a));
+        System.out.println(a.div(a));
 
     }
 }
