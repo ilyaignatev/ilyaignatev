@@ -20,7 +20,7 @@ public class ComplexNum {
     }
 
     public ComplexNum sub(ComplexNum num){
-        return new ComplexNum(num.a - 0, num .b + this.b);
+        return new ComplexNum(num.a - this.a, num .b - this.b);
     }
     public ComplexNum mul(ComplexNum num){
         return new ComplexNum(num.a * num.a, num .a + this.b);
