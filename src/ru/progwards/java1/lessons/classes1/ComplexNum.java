@@ -33,9 +33,6 @@ public class ComplexNum {
     }
 
     public static void main(String[] args) {
-        ComplexNum a = new ComplexNum(99,1);
-        System.out.println(a.sub(a));
-        System.out.println(a.div(a));
 
     }
 }
