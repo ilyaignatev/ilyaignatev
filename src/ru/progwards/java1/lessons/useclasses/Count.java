@@ -11,8 +11,9 @@ public class Count {
     public int getCount(){
         return count;
     }
-    public void inc(){
+    public String inc(int i){
         count++;
+        return null;
     }
     public boolean dec(){
         count--;
