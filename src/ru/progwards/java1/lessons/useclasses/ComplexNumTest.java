@@ -6,7 +6,7 @@ public class ComplexNumTest {
         ComplexNum num1 = new ComplexNum(1,1);
         ComplexNum num2 = new ComplexNum(-2,-2);
         ComplexNum num3 = new ComplexNum(3,-5);
-        System.out.println("сумма num0 и num1 равна " + num0.add(num1));
-        System.out.println("сумма num1 и num2 равна " + num1.add(num2));
+        System.out.println("сумма num0 и num1 равна " + num0.add(num0));
+        System.out.println("сумма num1 и num2 равна " + num1.add(num1));
     }
 }
