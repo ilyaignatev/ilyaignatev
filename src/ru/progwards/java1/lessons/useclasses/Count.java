@@ -8,12 +8,11 @@ public class Count {
     public Count(int count){
         this.count = count;
     }
-    public int getCount(){
+    public int getCount(String s){
         return count;
     }
-    public String inc(int i){
+    public void inc(){
         count++;
-        return null;
     }
     public boolean dec(){
         count--;
