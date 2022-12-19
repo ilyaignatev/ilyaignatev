@@ -5,12 +5,12 @@ public class CountTest{
         for(int i = 0; i <= count; i++){
             Count count1 = new Count();
             count1.inc();
-            System.out.print(" " + i + " ");
+            System.out.print(i + " ");
         }
-        }
+        System.out.println("\nтест inc окончен\"");
+    }
 
     public static void testDec(int count){
-        Count count1 = new Count();
     }
     public static void main(String[] args) {
         testInc(7);
