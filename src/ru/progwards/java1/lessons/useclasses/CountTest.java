@@ -21,6 +21,7 @@ public class CountTest{
                 System.out.println("count равен 0");
                 break;
             }
+            System.out.println("тест dec окончен");
         }
     }
     public static void main(String[] args) {
