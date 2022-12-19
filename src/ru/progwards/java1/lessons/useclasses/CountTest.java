@@ -2,12 +2,14 @@ package ru.progwards.java1.lessons.useclasses;
 
 public class CountTest{
     public static void testInc(int count) {
-        for(int i = 0; i <= count; i++){
-            Count count1 = new Count();
+        Count count1 = new Count();
+        while (count1.getCount(" ")<count){
             count1.inc();
-            System.out.print(i + " ");
+            System.out.print(count1.getCount(" ") + " ");
         }
-        System.out.println("\nтест inc окончен\"");
+        if (count>0)
+            System.out.println("");
+        System.out.println("тест inc окончен");
     }
 
     public static void testDec(int count){
