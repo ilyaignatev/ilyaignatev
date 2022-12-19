@@ -2,7 +2,7 @@ package ru.progwards.java1.lessons.useclasses;
 
 public class CountTest{
     public static void testInc(int count) {
-        for(int i = 0; i < count; i++){
+        for(int i = 0; i <= count; i++){
             Count count1 = new Count();
             count1.inc();
             System.out.print(" " + i + " ");
@@ -14,5 +14,7 @@ public class CountTest{
     }
     public static void main(String[] args) {
         testInc(7);
+        testInc(0);
+        testInc(-1);
     }
 }
