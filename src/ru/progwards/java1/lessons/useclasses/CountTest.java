@@ -17,11 +17,14 @@ public class CountTest {
             boolean result = count1.dec();
             System.out.print(count1.getCount() + " ");
             if (result) {
-                System.out.println();
-                System.out.println("count равен 0");
+                if(count>0) {
+                    System.out.println();
+                    System.out.print("count равен 0");
+                }
                 break;
             }
         }
+        System.out.println();
         System.out.println("тест dec окончен");
         }
 
