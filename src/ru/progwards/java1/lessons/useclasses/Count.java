@@ -8,7 +8,7 @@ public class Count {
     public Count(int count){
         this.count = count;
     }
-    public int getCount(String s){
+    public int getCount(){
         return count;
     }
     public void inc(){
