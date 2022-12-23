@@ -6,9 +6,9 @@ public Cow(String name) {
     }
     @Override
     public String kind(){
-        return "êîğîâà";
+        return "ĞºĞ¾Ñ€Ğ¾Ğ²Ğ°";
     }
     public String say(){
-        return "ìóóóóóóó";
+        return "Ğ¼ÑƒÑƒÑƒÑƒÑƒÑƒÑƒ";
     }
 }

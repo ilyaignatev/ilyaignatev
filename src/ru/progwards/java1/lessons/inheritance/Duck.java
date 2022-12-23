@@ -6,9 +6,9 @@ public abstract class Duck extends Animal{
     }
     @Override
     public String kind(){
-        return "утка";
+        return "СѓС‚РєР°";
     }
     public String say(){
-        return "кря-кря";
+        return "РєСЂСЏ-РєСЂСЏ";
     }
 }

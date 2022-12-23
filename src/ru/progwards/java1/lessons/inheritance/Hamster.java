@@ -6,9 +6,9 @@ public abstract class Hamster extends Animal {
     }
     @Override
     public String kind(){
-        return "хомяк";
+        return "С…РѕРјСЏРє";
     }
     public String say(){
-        return "хрум-хрум-хрум";
+        return "С…СЂСѓРј-С…СЂСѓРј-С…СЂСѓРј";
     }
 }
