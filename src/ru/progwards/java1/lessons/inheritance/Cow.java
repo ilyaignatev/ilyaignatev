@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.inheritance;
 
-public abstract class Cow extends Animal{
+public class Cow extends Animal{
 public Cow(String name) {
         super(name);
     }

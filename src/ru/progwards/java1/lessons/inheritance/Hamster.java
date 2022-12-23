@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.inheritance;
 
-public abstract class Hamster extends Animal {
+public class Hamster extends Animal {
     public Hamster(String name) {
         super(name);
     }
