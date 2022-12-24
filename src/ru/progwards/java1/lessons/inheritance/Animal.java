@@ -5,9 +5,18 @@ public abstract class Animal {
     public Animal(String name){
         this.name = name;
     }
+
+    public Animal() {
+        say().toString();
+    }
+
     public abstract String kind();
     public abstract String say();
     public String toString(){
         return "Это " + kind() + " " + name;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
