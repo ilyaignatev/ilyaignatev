@@ -14,4 +14,9 @@ public class TimeZone {
     public TimeZone getTimeZone(){
         return null;
     }
+
+    public static void main(String[] args) {
+        TimeZone zone1 = new TimeZone(-3,15);
+        System.out.println(zone1.getTimeZone());
+    }
 }

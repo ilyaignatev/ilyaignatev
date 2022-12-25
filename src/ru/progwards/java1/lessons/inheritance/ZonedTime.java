@@ -3,12 +3,10 @@ package ru.progwards.java1.lessons.inheritance;
 public class ZonedTime extends Time{
     TimeZone zone;
     public ZonedTime(int hours, int minutes, int seconds){
-        this.hours = hours;
-        this.minutes = minutes;
-        this.seconds = seconds;
+        ZonedTime zone1 = new ZonedTime(7,13,7);
     }
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
-        super(hours, minutes, seconds);
+        ZonedTime zone2 = new ZonedTime(12,49,57);
         this.zone = zone;
     }
     public TimeZone getTimeZone(){
