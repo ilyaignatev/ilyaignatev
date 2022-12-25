@@ -13,4 +13,8 @@ public class TimeZone {
     public TimeZone getTimeZone(){
         return null;
     }
+
+    public static void main(String[] args) {
+        Time tim1 = new Time();
+    }
 }
