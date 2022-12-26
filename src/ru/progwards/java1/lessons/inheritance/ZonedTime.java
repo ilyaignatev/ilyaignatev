@@ -30,7 +30,7 @@ public class ZonedTime extends Time{
     }
     @Override
     public int secondsBetween(Time time){
-        return getTimeZone().hours * 60 * 60 + getTimeZone().minutes * 60 + this.seconds + zone.hours + zone.minutes - time.toSeconds();
+        return zone.hours * 60 * 60 + zone.minutes * 60 + this.seconds - time.toSeconds();
     }
 }
 
