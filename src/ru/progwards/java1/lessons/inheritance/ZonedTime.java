@@ -28,7 +28,9 @@ public class ZonedTime extends Time{
     }
 
     public static void main(String[] args) {
-
+Time time = new Time(5,6,8);
+Time time1 = new ZonedTime(7,5,8,new TimeZone(0));
+        System.out.println(time.secondsBetween(time1));
     }
 }
 
