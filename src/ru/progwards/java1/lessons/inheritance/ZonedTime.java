@@ -31,6 +31,6 @@ public ZonedTime(int hours, int minutes, int second){
     }
     @Override
     public int secondsBetween(Time time){
-    return Math.abs(getTimeZone().hours * 60 * 60 + getTimeZone().minutes * 60 + this.seconds - zone.hours* zone.minutes* seconds);
+    return Math.abs(this.hours * 60 * 60 + this.minutes * 60 + this.seconds - zone.hours* zone.minutes* seconds);
     }
 }
