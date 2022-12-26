@@ -11,7 +11,7 @@ public ZonedTime(int hours, int minutes, int second){
     this.zone =zone;
     }
     public TimeZone getTimeZone(){
-    return zone;
+    return zone.getTimeZone();
     }
     @Override
     public int secondsBetween(Time time){
