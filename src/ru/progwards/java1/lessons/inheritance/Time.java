@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.inheritance;
 
-public abstract class Time {
+public class Time {
     int hours;
     int minutes;
     int seconds;
