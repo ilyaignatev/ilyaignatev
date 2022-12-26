@@ -9,13 +9,12 @@ public class ZonedTime extends Time{
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
         ZonedTime zone2 = new ZonedTime(12,49,57);
     }
-    @Override
     public TimeZone getTimeZone(){
         return zone;
     }
     @Override
     public int secondsBetween(Time time){
-        return 1;
+        return Math.abs(this.hours * 60 * 60 + this.minutes * 60 + seconds - time.toSeconds());
     }
 
 }
