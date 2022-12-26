@@ -22,7 +22,7 @@ public class ZonedTime extends Time{
         TimeZone zone;
     }
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
-        this(hours,minutes,seconds);
+        super(hours,minutes,seconds);
         this.zone =zone;
     }
     @Override
