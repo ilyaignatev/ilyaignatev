@@ -15,7 +15,16 @@ public class ZonedTime extends Time{
     }
     @Override
     public int secondsBetween(Time time){
-        return Math.abs(toSeconds() - time.toSeconds());
+        int a;
+        int b;
+        if(getTimeZone() == null){
+            a = toSeconds();
+        }
+        else{
+            a = toSeconds() + zone.hours * 3600 + zone.minutes * 60;
+        }
+        b = time.toSeconds();
+        return  a -b;
     }
 
     public static void main(String[] args) {
