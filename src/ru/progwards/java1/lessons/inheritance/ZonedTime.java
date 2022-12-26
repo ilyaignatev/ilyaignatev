@@ -19,12 +19,9 @@ public class ZonedTime extends Time{
     TimeZone zone;
     public ZonedTime(int hours, int minutes, int second){
         super(hours,minutes,second);
-        zone = new TimeZone(0,0);
     }
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
-        this.hours = hours;
-        this.minutes = minutes;
-        this.seconds = seconds;
+        super(hours, minutes, seconds);
         this.zone = zone;
     }
     @Override
