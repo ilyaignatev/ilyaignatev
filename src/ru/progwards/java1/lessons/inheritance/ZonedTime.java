@@ -15,22 +15,16 @@ public class ZonedTime extends Time{
     }
     @Override
     public int secondsBetween(Time time){
-        int a;
-        int b;
-        if(getTimeZone() == null){
-            a = toSeconds();
-        }
-        else{
-            a = toSeconds() + zone.hours * 3600 + zone.minutes * 60;
-        }
-        b = time.toSeconds();
-        return  a -b;
+        return Math.abs(getTimeZone().hours*3600 + getTimeZone().minutes * 60 + seconds - time.toSeconds());
     }
 
     public static void main(String[] args) {
-Time time = new Time(5,6,8);
-Time time1 = new ZonedTime(7,5,8,new TimeZone(0));
-        System.out.println(time.secondsBetween(time1));
+        ZonedTime zt1 = new ZonedTime(6, 33, 8, new TimeZone(-1));
+        ZonedTime zt2 = new ZonedTime(6, 33, 8, new TimeZone(2));
+        System.out.println(zt1.secondsBetween(zt2));
+        ZonedTime zt3 = new ZonedTime(18, 10, 43, new TimeZone(-2, 5));
+        Time t4 = new Time(18, 40, 44);
+        System.out.println(zt3.secondsBetween(t4));
     }
 }
 
