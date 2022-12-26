@@ -37,5 +37,9 @@ public class ZonedTime extends Time{
         TimeZone zone2 = time.getTimeZone();
         return (zone1.hours * 60 * 60 + zone1.minutes * 60) - (zone2.hours *60*60 + zone2.minutes * 60);
     }
+
+    public static void main(String[] args) {
+
+    }
 }
 
