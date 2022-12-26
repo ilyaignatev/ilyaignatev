@@ -10,11 +10,12 @@ public ZonedTime(int hours, int minutes, int second){
     this(hours,minutes,seconds);
     this.zone =zone;
     }
+    @Override
     public TimeZone getTimeZone(){
-    return zone.getTimeZone();
+    return zone;
     }
     @Override
     public int secondsBetween(Time time){
-    return Math.abs(getTimeZone().hours * 60 * 60 + getTimeZone().minutes * 60 + seconds - secondsBetween(time));
+    return Math.abs(getTimeZone().hours * 60 * 60 + getTimeZone().minutes * 60 + seconds);
     }
 }
