@@ -33,9 +33,7 @@ public class ZonedTime extends Time{
     }
     @Override
     public int secondsBetween(Time time){
-        TimeZone zone1 = this.getTimeZone();
-        TimeZone zone2 = time.getTimeZone();
-        return (zone1.hours * 60 * 60 + zone1.minutes * 60) - (zone2.hours *60*60 + zone2.minutes * 60);
+        return Math.abs(toSeconds() - time.toSeconds());
     }
 
     public static void main(String[] args) {
