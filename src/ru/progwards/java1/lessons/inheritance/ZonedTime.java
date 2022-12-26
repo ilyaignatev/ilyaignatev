@@ -4,7 +4,7 @@ public class ZonedTime extends Time{
     TimeZone zone;
     public ZonedTime(int hours, int minutes, int second){
         super(hours,minutes,second);
-        zone = new TimeZone(0,0);
+        this.zone = new TimeZone(0);
     }
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
         super(hours, minutes, seconds);
@@ -20,12 +20,9 @@ public class ZonedTime extends Time{
     }
 
     public static void main(String[] args) {
-        ZonedTime zt1 = new ZonedTime(6, 33, 8, new TimeZone(-1));
-        ZonedTime zt2 = new ZonedTime(6, 33, 8, new TimeZone(2));
+        ZonedTime zt1 = new ZonedTime(4, 12, 23, new TimeZone(2));
+        ZonedTime zt2 = new ZonedTime(7, 2, 11, new TimeZone(3));
         System.out.println(zt1.secondsBetween(zt2));
-        ZonedTime zt3 = new ZonedTime(18, 10, 43, new TimeZone(-2, 5));
-        Time t4 = new Time(18, 40, 44);
-        System.out.println(zt3.secondsBetween(t4));
     }
 }
 
