@@ -21,11 +21,8 @@ public class Time {
 
         return hours * 60 * 60 + minutes * 60 + seconds;
     }
-    public TimeZone getTimeZone(){
-        return null;
-    }
     public int secondsBetween(Time time) {
-        return Math.abs(this.hours * 60 * 60 + this.minutes * 60 + seconds - time.toSeconds());
+        return Math.abs(this.hours * 60 * 60 + this.minutes * 60 + this.seconds - time.toSeconds());
     }
     public static void main(String[] args) {
     }
