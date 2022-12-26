@@ -24,6 +24,9 @@ public class Time {
     public int secondsBetween(Time time) {
         return Math.abs(this.hours * 60 * 60 + this.minutes * 60 + this.seconds - time.toSeconds());
     }
+    public TimeZone getTimeZone() {
+        return null;
+    }
     public static void main(String[] args) {
     }
 }

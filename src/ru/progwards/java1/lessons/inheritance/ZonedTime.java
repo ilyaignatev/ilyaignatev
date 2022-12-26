@@ -19,18 +19,21 @@ public class ZonedTime extends Time{
     TimeZone zone;
     public ZonedTime(int hours, int minutes, int second){
         super(hours,minutes,second);
-        TimeZone zone;
+        this.zone = getTimeZone();
     }
     public ZonedTime(int hours, int minutes, int seconds, TimeZone zone){
         super(hours,minutes,seconds);
         this.zone =zone;
     }
+    @Override
     public TimeZone getTimeZone(){
         return zone;
     }
     @Override
     public int secondsBetween(Time time){
-        return zone.hours * 60 * 60 + zone.minutes * 60 + this.seconds - time.toSeconds();
+        TimeZone zone1 = this.getTimeZone();
+        TimeZone zone2 = time.getTimeZone();
+        return super.secondsBetween(time) + Math.abs(zone1.hours * 60 * 60 + zone1.minutes * 60 - zone2.hours *60*60 + zone2.minutes * 60);
     }
 }
 
