@@ -37,11 +37,11 @@ public abstract class Animal {
             return -1;
         }
     }
-    public boolean equals(Object o){
-        Animal animal = (Animal) o;
-        return  (this.name.equals(animal.name))
-                && (this.kind().equals(animal.kind()))
-                && (this.weight == animal.weight);
+    public boolean equals(Animal o){
+
+        return  (this.name.equals(o.name))
+                && (this.kind().equals(o.kind()))
+                && (this.weight == o.weight);
     }
     abstract public FoodKind getFoodKind();
     abstract public double getFoodCoeff();
