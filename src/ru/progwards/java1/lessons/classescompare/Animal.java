@@ -38,9 +38,6 @@ public abstract class Animal {
         }
     }
     public boolean equals(Object o){
-        if (this == o) {
-            return true;
-        }
         Animal animal = (Animal) o;
         return  (this.name.equals(animal.name))
                 && (this.kind().equals(animal.kind()))
