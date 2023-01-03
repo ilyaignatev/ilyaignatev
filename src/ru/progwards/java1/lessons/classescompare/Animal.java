@@ -46,9 +46,14 @@ public abstract class Animal {
         return weight * getFoodCoeff();
     }
     public double calculateFoodPrice(){
-        int HAY = 1;
-        int CORN = 15;
-        return calculateFoodWeight() * HAY;
+        int price;
+        if(getFoodKind() == FoodKind.HAY){
+            price = 2;
+        }
+        else {
+            price = 15;
+        }
+        return calculateFoodWeight() * price;
     }
     public static void main(String[] args) {
 
