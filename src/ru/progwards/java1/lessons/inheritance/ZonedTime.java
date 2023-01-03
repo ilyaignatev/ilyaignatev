@@ -35,5 +35,9 @@ class ZonedTime extends Time {
 
         return super.secondsBetween(time) + Math.abs(sdvigk1 - sdvigk2);
     }
+
+    public static void main(String[] args) {
+
+    }
 }
 
