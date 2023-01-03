@@ -34,7 +34,9 @@ public abstract class Animal {
         if(kind() == kind() && this.name == this.name && weight == weight){
             return true;
         }
-        return false;
+        else {
+            return false;
+        }
 
     } // Сранвение животных по параметрам имя,тип,вес
     abstract public FoodKind getFoodKind(); //Возвращает вид еды
