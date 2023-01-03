@@ -6,7 +6,7 @@ public abstract class Animal {
     enum FoodKind{
         HAY,
         CORN,
-    } // Перечисление еды
+    }
     public Animal(String name){
         this.name = name;
     }
@@ -22,10 +22,10 @@ public abstract class Animal {
     }
     public void setWeight(double weight){
         this.weight = weight;
-    }// Вес животного
+    }
     public double getWeight(){
         return weight;
-    }//Возвращает вес животного
+    }
     int compareTo(Animal animal){
         if(this.weight == animal.weight) {
             return 0;
@@ -38,10 +38,16 @@ public abstract class Animal {
         }
     }
     public boolean equals(Object o){
-        return false;
-    } // Сранвение животных по параметрам имя,тип,вес
-    abstract public FoodKind getFoodKind(); //Возвращает вид еды
-    abstract public double getFoodCoeff(); // Возвращает коэф веса еды к телу
+        if (this == o) {
+            return true;
+        }
+        Animal animal = (Animal) o;
+        return  (this.name.equals(animal.name))
+                && (this.kind().equals(animal.kind()))
+                && (this.weight == animal.weight);
+    }
+    abstract public FoodKind getFoodKind();
+    abstract public double getFoodCoeff();
     public double calculateFoodWeight(){
         return weight * getFoodCoeff();
     }
