@@ -27,17 +27,18 @@ public abstract class Animal {
         return weight;
     }//Возвращает вес животного
     int compareTo(Animal animal){
-
-        return 0;
+        if(this.weight == animal.weight) {
+            return 0;
+        }
+        if(this.weight > animal.weight){
+            return 1;
+        }
+        else{
+            return -1;
+        }
     }
     public boolean equals(Object o){
-        if(kind().equals(kind()) && name.equals(name)){
-            return true;
-        }
-        else {
-            return false;
-        }
-
+        return false;
     } // Сранвение животных по параметрам имя,тип,вес
     abstract public FoodKind getFoodKind(); //Возвращает вид еды
     abstract public double getFoodCoeff(); // Возвращает коэф веса еды к телу
