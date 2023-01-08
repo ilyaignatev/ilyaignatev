@@ -1,17 +1,18 @@
 package ru.progwards.java1.lessons.arrays1;
 
+import java.util.Random;
+
 public class Matrix {
     private int[][]matrix;
     public Matrix(int[][]matrix){
         this.matrix = matrix;
     }
     public int maxInRow(int num){
-        num = 0;
-        int max_index = 0;
+        int[][]matrix = new int[4][4];
+        Random random = new Random();
         for(int i = 0; i <matrix.length; i++){
             if(matrix[i][i] > num){
                 num = matrix[i][i];
-                max_index = 1;
             }
         }
         return num;
@@ -30,7 +31,7 @@ public class Matrix {
         int[][] transposition = new int[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                transposition[i][j] = n*i + j;
+                transposition[i][j] = n * i + j;
             }
         }
         for (int i = 0; i < n; i++) {
