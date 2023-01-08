@@ -22,6 +22,12 @@ public class Matrix {
         return maxInRow(0);
     }
     public boolean isMatrix(){
+        if(matrix.length < matrix.length){
+            return false;
+        }
+        if(matrix.length > matrix.length){
+            return false;
+        }
         return true;
     }
     public int[][] transposition(){
