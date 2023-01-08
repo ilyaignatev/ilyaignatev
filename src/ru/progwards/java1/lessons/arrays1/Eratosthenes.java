@@ -21,6 +21,13 @@ public class Eratosthenes {
     }
     }
     public boolean isSimple(int n){
-        return sieve[N];
+        if (n < 2)
+            return false;
+        double s = Math.sqrt(n);
+        for (int i = 2; i <= s; i++) {
+            if (n % i == 0)
+                return false;
+        }
+        return true;
     }
 }
