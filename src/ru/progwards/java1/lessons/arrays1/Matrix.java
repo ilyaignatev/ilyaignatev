@@ -22,10 +22,14 @@ public class Matrix {
         return maxInRow(0);
     }
     public boolean isMatrix(){
-        for(int i = 0; i< matrix.length; i++){
-            for(int j = 0; j> matrix.length; j++){
-                return false;
-            }
+        int a = 3;
+        int b = 4;
+        int[][]matrix;
+        matrix = new int[a][b];
+        if(matrix[a].length > matrix[b].length){
+            return false;
+        }
+        if(matrix[a].length < matrix[b].length){
             return false;
         }
         return true;
