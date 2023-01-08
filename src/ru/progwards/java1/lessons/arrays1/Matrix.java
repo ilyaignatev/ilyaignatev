@@ -6,9 +6,9 @@ public class Matrix {
         this.matrix = matrix;
     }
     public int maxInRow(int num){
-        int[]array1 = {num};
-        int maxNum = array1[0];
-        for(int i : array1){
+        int[]matrix = {num};
+        int maxNum = matrix[0];
+        for(int i : matrix){
             if(i > maxNum){
                 maxNum = i;
             }
