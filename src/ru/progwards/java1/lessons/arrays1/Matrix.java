@@ -15,7 +15,13 @@ public class Matrix {
         }return maxNum;
     }
     public int maxInCol(int num){
-        return num;
+        int MaxInt = Integer.MAX_VALUE;
+        for(int i = 0; i< matrix.length; i++){
+            if(matrix[i].length < num +1){
+
+            }
+        }
+        return MaxInt;
     }
     public int max(){
         return maxInRow(0);
