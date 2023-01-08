@@ -2,25 +2,21 @@ package ru.progwards.java1.lessons.arrays1;
 
 public class Matrix {
     private int[][]matrix;
-    int b = 0;
     public Matrix(int[][]matrix){
         this.matrix = matrix;
     }
     public int maxInRow(int num){
-        for(int i = 0; i<= matrix[num].length; i++){
-            if(matrix[i][num] > matrix[num][i + 1]){
-                b = matrix[num][i];
+        int MaxNumbers = Integer.MIN_VALUE;
+        for(int i : matrix[num]){
+            if(i > MaxNumbers){
+                MaxNumbers = i;
             }
         }
-        return b;
+        return MaxNumbers;
     }
     public int maxInCol(int num){
-        for(int i = 0; i <= matrix.length; i++){
-            if(matrix[i][num] > matrix[i+1][num]){
-                b = matrix[i][num];
-            }
-        }
-        return b;
+
+        return 0;
     }
     public int max(){
         return maxInRow(0);
