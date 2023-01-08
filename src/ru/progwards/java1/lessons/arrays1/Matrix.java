@@ -22,15 +22,13 @@ public class Matrix {
         return maxInRow(0);
     }
     public boolean isMatrix(){
-        if(matrix.length < matrix.length){
+        for(int i = 0; i< matrix.length; i++){
+            for(int j = 0; j> matrix.length; j++){
+                return false;
+            }
             return false;
         }
-        if(matrix.length > matrix.length){
-            return false;
-        }
-        else {
-            return true;
-        }
+        return true;
     }
     public int[][] transposition(){
         int n = 3;
