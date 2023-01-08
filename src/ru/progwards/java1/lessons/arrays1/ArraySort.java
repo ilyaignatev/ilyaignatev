@@ -6,7 +6,7 @@ public class ArraySort {
         boolean swapped;
         do{
             swapped = false;
-            for(int i = 0; i < stepsCount; i++){
+            for (int i = 0; i < stepsCount; i++){
                 if(a[i]>a[i+1]){
                     int temp = a[i];
                     a[i] = a[i+1];
@@ -19,6 +19,5 @@ public class ArraySort {
     }
 
     public static void main(String[] args) {
-
     }
 }
