@@ -1,8 +1,5 @@
 package ru.progwards.java1.lessons.arrays1;
 
-
-import java.util.Random;
-
 public class Matrix {
     private int[][]matrix;
     public Matrix(int[][]matrix){
