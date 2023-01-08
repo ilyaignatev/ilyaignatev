@@ -7,16 +7,20 @@ public class Matrix {
         this.matrix = matrix;
     }
     public int maxInRow(int num){
-        for(int i = 0; i<= matrix.length; i++){
+        for(int i = 0; i<= matrix[num].length; i++){
+            if(matrix[i][num] > matrix[num][i + 1]){
+                b = matrix[num][i];
+            }
+        }
+        return b;
+    }
+    public int maxInCol(int num){
+        for(int i = 0; i <= matrix.length; i++){
             if(matrix[i][num] > matrix[i+1][num]){
                 b = matrix[i][num];
             }
         }
         return b;
-    }
-    public int maxInCol(int[][] num){
-
-        return 0;
     }
     public int max(){
         return maxInRow(0);
