@@ -28,7 +28,9 @@ public class Matrix {
         if(matrix.length > matrix.length){
             return false;
         }
-        return true;
+        else {
+            return true;
+        }
     }
     public int[][] transposition(){
         int n = 3;
