@@ -1,6 +1,5 @@
 package ru.progwards.java1.lessons.arrays1;
 
-import java.util.Random;
 
 public class Matrix {
     private int[][]matrix;
@@ -9,7 +8,6 @@ public class Matrix {
     }
     public int maxInRow(int num){
         int[][]matrix = new int[4][4];
-        Random random = new Random();
         for(int i = 0; i <matrix.length; i++){
             if(matrix[i][i] > num){
                 num = matrix[i][i];
