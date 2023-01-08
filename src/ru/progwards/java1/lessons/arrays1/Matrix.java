@@ -14,14 +14,15 @@ public class Matrix {
             }
         }return maxNum;
     }
-    public int maxInCol(int num){
-        int MaxInt = Integer.MAX_VALUE;
-        for(int i = 0; i< matrix.length; i++){
-            if(matrix[i].length < num +1){
+    public int maxInCol(int[][] num){
+        int result = Integer.MIN_VALUE;
 
-            }
+        for (int[] i : matrix) {
+            for (int j : i)
+                result = Math.max(result, j);
         }
-        return MaxInt;
+
+        return result;
     }
     public int max(){
         return maxInRow(0);
@@ -46,5 +47,9 @@ public class Matrix {
             }
         }
         return null;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
