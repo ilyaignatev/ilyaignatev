@@ -19,7 +19,13 @@ public class Matrix {
         return 0;
     }
     public int max(){
-        return maxInRow(0);
+        int Number2 = Integer.MIN_VALUE;
+        for(int i = 0; i < matrix.length; i++){
+            if(maxInRow(i) > Number2){
+                Number2 = maxInRow(i);
+            }
+        }
+        return Number2;
     }
     public boolean isMatrix(){
         return true;
