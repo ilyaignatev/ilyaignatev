@@ -29,12 +29,12 @@ public class Matrix {
         return Number2;
     }
     public boolean isMatrix(){
-        if(matrix[N].length != matrix[0].length){
-            return false;
+        for (int i = 0; i <matrix.length-1; i++) {
+            if (matrix[i].length == matrix[i + 1].length) {
+                return true;
+            }
         }
-        else{
-            return true;
-        }
+        return false;
     }
     public int[][] transposition(){
         int n = 3;
@@ -55,6 +55,5 @@ public class Matrix {
     }
 
     public static void main(String[] args) {
-
     }
 }
