@@ -30,10 +30,10 @@ public class Matrix {
     }
     public boolean isMatrix(){
         if(matrix[N].length != matrix[0].length){
-            return true;
+            return false;
         }
         else{
-            return false;
+            return true;
         }
     }
     public int[][] transposition(){
