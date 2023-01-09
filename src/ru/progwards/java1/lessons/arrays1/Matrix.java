@@ -16,13 +16,16 @@ public class Matrix {
         return MaxNumbers;
     }
     public int maxInCol(int num){
-        int MaxNumbers = Integer.MIN_VALUE;
-        for(int i : matrix[num]){
-            if(i > MaxNumbers){
-                MaxNumbers = i;
+        int MaxInCol = Integer.MIN_VALUE;
+        for (int i = 0; i < matrix.length; i++) {
+            if (matrix[i].length < num + 1) {
+                continue;
+            }
+            if (matrix[i][num] > MaxInCol) {
+                MaxInCol = matrix[i][num];
             }
         }
-        return MaxNumbers;
+        return MaxInCol;
     }
     public int max(){
         int Number2 = Integer.MIN_VALUE;
