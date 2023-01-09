@@ -28,8 +28,15 @@ public class Matrix {
         return Number2;
     }
     public boolean isMatrix(){
-        return true;
-
+        int ArrayMatrix[][] = new int[5][];
+        for(int i = 0; i < ArrayMatrix.length; i++){
+            for (int j = 0; j < ArrayMatrix[0].length; j++){
+                if(ArrayMatrix[i] == ArrayMatrix[j]){
+                        return true;
+                }
+            }
+        }
+return false;
     }
     public int[][] transposition(){
         int n = 3;
