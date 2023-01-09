@@ -2,6 +2,7 @@ package ru.progwards.java1.lessons.arrays1;
 
 public class Matrix {
     private int[][]matrix;
+    int N;
     public Matrix(int[][]matrix){
         this.matrix = matrix;
     }
@@ -28,14 +29,12 @@ public class Matrix {
         return Number2;
     }
     public boolean isMatrix(){
-        for(int i = 0; i < matrix.length; i++){
-            for (int j = 0; j < matrix[0].length; j++){
-                if(matrix[i] == matrix[j]){
-                        return true;
-                }
-            }
+        if(matrix[N].length == matrix[N].length){
+            return true;
         }
-        return false;
+        else{
+            return false;
+        }
     }
     public int[][] transposition(){
         int n = 3;
