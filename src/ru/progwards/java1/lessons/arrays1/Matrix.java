@@ -29,7 +29,7 @@ public class Matrix {
         return Number2;
     }
     public boolean isMatrix(){
-        if(matrix[N].length == matrix[N].length){
+        if(matrix[N].length != matrix[0].length){
             return true;
         }
         else{
