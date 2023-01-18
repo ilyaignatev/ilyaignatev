@@ -3,9 +3,14 @@ package ru.progwards.java1.lessons.arrays2;
 import java.util.Arrays;
 
 public class IntArrays {
+    int[]a;
+    public IntArrays(int[] a) {
+        this.a = a;
+    }
+
     public static String toString(int []a){
-        IntArrays ia = new IntArrays();
-        return ia.toString(a);
+        IntArrays ia = new IntArrays(a);
+        return String.valueOf(ia);
     }
 
     public static boolean equals1(int[] a1, int[] a2){
