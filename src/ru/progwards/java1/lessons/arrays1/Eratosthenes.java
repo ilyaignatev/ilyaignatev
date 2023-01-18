@@ -3,24 +3,27 @@ package ru.progwards.java1.lessons.arrays1;
 public class Eratosthenes {
     private boolean[] sieve;
     int N;
+
     public Eratosthenes(int N) {
         this.N = N;
 
     }
-    private void sift(){
-    for (int i = 2; i <= 100; i++){
-        boolean sieve = true;
-        for(int j = 2; j <= 100; j++){
-            if(i % j == 0){
-                sieve = false;
-                break;
+
+    private void sift() {
+        for (int i = 2; i <= 100; i++) {
+            boolean sieve = true;
+            for (int j = 2; j <= 100; j++) {
+                if (i % j == 0) {
+                    sieve = false;
+                    break;
+                }
             }
+            if (sieve) ;
+            System.out.println(i);
         }
-        if(sieve);
-        System.out.println(i);
     }
-    }
-    public boolean isSimple(int n){
+
+    public boolean isSimple(int n) {
         if (n < 2)
             return false;
         double s = Math.sqrt(n);
@@ -29,5 +32,11 @@ public class Eratosthenes {
                 return false;
         }
         return true;
+    }
+
+    public static void main(String[] args) {
+        Eratosthenes eratosthenes = new Eratosthenes(100);
+        eratosthenes.sift();
+        System.out.println(eratosthenes.isSimple(12));
     }
 }
