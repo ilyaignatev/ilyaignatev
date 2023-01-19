@@ -12,10 +12,10 @@ public class IntArrays {
 
     public static boolean equals1(int[] a1, int[] a2){
         if(a1 == a2 && a1.length == a2.length){
-            return true;
+            return false;
         }
         else {
-            return false;
+            return true;
         }
     }
     public static boolean equals2(int[] a1, int[] a2){
