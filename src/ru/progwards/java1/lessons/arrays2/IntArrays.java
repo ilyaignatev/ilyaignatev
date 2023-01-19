@@ -9,11 +9,10 @@ public class IntArrays {
     }
 
     public static String toString(int []a){
-        IntArrays ia = new IntArrays(a);
         for(int i = 0; i < a.length; i++){
-            System.out.println(a);
+            System.out.println(a[i]);
         }
-        return String.valueOf(ia);
+        return String.valueOf(a);
     }
 
     public static boolean equals1(int[] a1, int[] a2){
