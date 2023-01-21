@@ -6,7 +6,7 @@ public class IntArrays {
     public static String toString(int []a){
         String str = "";
         for(int value : a){
-            str = str.concat(String.valueOf(value));
+            str = str.concat(String.valueOf(+ value + ", "));
         }
         return str;
     }
