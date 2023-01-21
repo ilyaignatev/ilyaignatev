@@ -7,7 +7,7 @@ public class IntArrays {
         for(int i = 0; i < a.length; i++){
             System.out.print(a[i] + " ");
         }
-        return String.valueOf(a.length);
+        return String.valueOf(a);
     }
 
     public static boolean equals1(int[] a1, int[] a2){
