@@ -4,11 +4,14 @@ import java.util.Arrays;
 
 public class IntArrays {
     public static String toString(int []a){
-        String str = "";
-        for(int value : a){
-            str = str.concat(String.valueOf(+ value + ", "));
+        System.out.print("[");
+        for(int i = 0; i < a.length; i++){
+            if(i > 0) {
+                System.out.print(", ");
+            }
+                System.out.print(a[i]);
         }
-        return str;
+        return "]";
     }
 
     public static boolean equals1(int[] a1, int[] a2){
