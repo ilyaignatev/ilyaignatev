@@ -11,8 +11,7 @@ public class IntArrays {
             }
             System.out.print(a[i]);
         }
-        System.out.print("]");
-        return a.toString();
+        return "]";
     }
 
     public static boolean equals1(int[] a1, int[] a2){
