@@ -4,17 +4,15 @@ import java.util.Arrays;
 
 public class IntArrays {
     public static String toString(int []a){
-        if( a == null ) return "null";
-        if( a.length == 0 ) return "{}";
-        StringBuilder sb = new StringBuilder();
-        sb.append( '[' );
+        System.out.print("[");;
         for (int i = 0; i < a.length; i++) {
-            sb.append( a[i] );
-            sb.append( ", " );
+            if(i > 0){
+                System.out.print(", ");
+            }
+            System.out.print(a[i]);
         }
-        sb.setLength( sb.length()-2 );
-        sb.append( ']' );
-        return sb.toString();
+        System.out.print("]");
+        return toString(a);
     }
 
     public static boolean equals1(int[] a1, int[] a2){
