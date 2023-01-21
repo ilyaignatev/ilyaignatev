@@ -12,7 +12,7 @@ public class IntArrays {
             System.out.print(a[i]);
         }
         System.out.print("]");
-        return toString(a);
+        return a.toString();
     }
 
     public static boolean equals1(int[] a1, int[] a2){
