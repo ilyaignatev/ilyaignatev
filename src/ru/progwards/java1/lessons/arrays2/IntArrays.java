@@ -6,10 +6,10 @@ public class IntArrays {
     public static String toString(int []a){
         String b = "[";
         for (int i = 0; i < a.length; i++) {
-            if(i < a.length){
+            if(i < a.length -1){
                 b = b + a[i] + "," + " ";
             }
-            if(i == a.length){
+            if(i == a.length -1){
                 b += a[i] + "]";
             }
         }
