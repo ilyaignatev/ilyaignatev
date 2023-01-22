@@ -5,13 +5,14 @@ import java.util.Arrays;
 public class IntArrays {
     public static String toString(int []a){
         System.out.print("[");;
+        int result = 0;
         for (int i = 0; i < a.length; i++) {
             if(i > 0){
                 System.out.print(", ");
             }
-            System.out.print(a[i]);
+            return result + i;
         }
-        return "]";
+        return result + "]";
     }
 
     public static boolean equals1(int[] a1, int[] a2){
