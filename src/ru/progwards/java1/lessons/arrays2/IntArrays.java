@@ -10,7 +10,7 @@ public class IntArrays {
             if(i > 0){
                 System.out.print(", ");
             }
-            return result + i;
+            System.out.print(result + i);
         }
         return result + "]";
     }
