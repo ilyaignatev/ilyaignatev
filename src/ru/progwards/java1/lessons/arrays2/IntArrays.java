@@ -4,15 +4,16 @@ import java.util.Arrays;
 
 public class IntArrays {
     public static String toString(int []a){
-        System.out.print("[");;
-        int result = 0;
+        String b = "[";
         for (int i = 0; i < a.length; i++) {
-            if(i > 0){
-                System.out.print(", ");
+            if(i < a.length){
+                b = b + a[i] + "," + " ";
             }
-            System.out.print(result + i);
+            if(i == a.length){
+                b += a[i] + "]";
+            }
         }
-        return result + "]";
+        return b;
     }
 
     public static boolean equals1(int[] a1, int[] a2){
