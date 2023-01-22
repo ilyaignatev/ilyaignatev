@@ -17,12 +17,16 @@ public class IntArrays {
     }
 
     public static boolean equals1(int[] a1, int[] a2){
-        if(a1 == a2 && a1.length == a2.length){
-            return false;
+        Arrays.sort(a1);
+        Arrays.sort(a2);
+        for(int i = 0; i < a1.length; i++){
+            for (int j = 0; j < a2.length; j++){
+                if(a1[i] == a2[j]){
+                    return true;
+                }
+            }
         }
-        else {
-            return true;
-        }
+        return false;
     }
     public static boolean equals2(int[] a1, int[] a2){
         return Arrays.equals(a1, a2);
