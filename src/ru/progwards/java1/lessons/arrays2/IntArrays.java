@@ -35,6 +35,9 @@ public class IntArrays {
     public static void main(String[] args) {
         int[]ab = {34,124,5,7,2,5,7};
         System.out.println(toString(ab));
+        int[]b1 = {1,2,3};
+        int[]b2 = {1,2,5};
+        System.out.println(equals1(b1,b2));
     }
 }
 
