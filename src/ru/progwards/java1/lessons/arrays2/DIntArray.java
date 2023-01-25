@@ -3,14 +3,15 @@ package ru.progwards.java1.lessons.arrays2;
 import java.util.Arrays;
 
 public class DIntArray {
-    private int[]DArray;
+    private int[]array;
     public DIntArray(){
-        this.DArray = DArray;
+        this.array = array;
     }
     public void add(int num){
-        int[]result = Arrays.copyOf(DArray,DArray.length +1);
-        result[result.length - 1] = num;
-        System.out.println(result);
+        int[]a2 = Arrays.copyOf(array,array.length + 1);
+        a2[array.length -1] = num;
+        array = Arrays.copyOf(a2,a2.length);
+
     }
     public void atInsert(int pos, int num){
         System.out.println(pos + num);
@@ -20,5 +21,10 @@ public class DIntArray {
     }
     public int at(int pos){
         return pos;
+    }
+
+    public static void main(String[] args) {
+        DIntArray d1 = new DIntArray();
+
     }
 }
