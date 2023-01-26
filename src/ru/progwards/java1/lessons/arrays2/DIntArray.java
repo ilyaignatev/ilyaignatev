@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class DIntArray {
     private int[]array;
     public DIntArray(){
-        this.array = array;
+        array = new int[]{};
     }
     public void add(int num){
         int[]arrayCo = Arrays.copyOf(array,array.length +1);
