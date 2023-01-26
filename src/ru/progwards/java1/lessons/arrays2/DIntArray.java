@@ -21,7 +21,21 @@ public class DIntArray {
         array = array1;
     }
     public void atInsert(int pos, int num){
-        System.out.println(pos + num);
+        int[]array1;
+        if(array == null){
+            array1 = new int[1];
+            array1[0] = num;
+        } else if (array.length -1 < pos) {
+            array1 = new int[array.length + 1];
+            System.arraycopy(array,0,array1,0,array.length);
+            array1[array.length] = num;
+        } else{
+            array1 = new int[array.length + 1];
+            System.arraycopy(array,0,array1,0,array.length);
+            array1[array.length] = num;
+            System.arraycopy(array,pos,array1,pos+1,array.length - pos);
+        }
+        array = array1;
     }
     public void atDelete(int pos){
         System.out.println(pos);
