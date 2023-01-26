@@ -1,17 +1,24 @@
 package ru.progwards.java1.lessons.arrays2;
 
-import java.net.DatagramSocket;
 import java.util.Arrays;
 
 public class DIntArray {
     private int[]array;
     public DIntArray(){
-        array = new int[]{};
+
     }
     public void add(int num){
-        int[]arrayCo = Arrays.copyOf(array,array.length +1);
-        arrayCo[arrayCo.length -1] = num;
-        array = arrayCo;
+        int[]array1;
+        if(array == null){
+            array1 = new int[1];
+            array1[0] = num;
+        }
+        else{
+            array1 = new int[array.length + 1];
+            System.arraycopy(array,0,array1,0,array.length);
+            array1[array.length] = num;
+        }
+        array = array1;
     }
     public void atInsert(int pos, int num){
         System.out.println(pos + num);
