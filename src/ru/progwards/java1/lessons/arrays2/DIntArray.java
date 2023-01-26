@@ -1,5 +1,6 @@
 package ru.progwards.java1.lessons.arrays2;
 
+import java.net.DatagramSocket;
 import java.util.Arrays;
 
 public class DIntArray {
@@ -8,10 +9,9 @@ public class DIntArray {
         this.array = array;
     }
     public void add(int num){
-        int[]a2 = Arrays.copyOf(array,array.length + 1);
-        a2[array.length -1] = num;
-        array = Arrays.copyOf(a2,a2.length);
-
+        int[]arrayCo = Arrays.copyOf(array,array.length +1);
+        arrayCo[arrayCo.length -1] = num;
+        array = arrayCo;
     }
     public void atInsert(int pos, int num){
         System.out.println(pos + num);
@@ -24,7 +24,6 @@ public class DIntArray {
     }
 
     public static void main(String[] args) {
-        DIntArray d1 = new DIntArray();
 
-    }
+            }
 }
