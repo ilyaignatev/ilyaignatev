@@ -38,10 +38,20 @@ public class DIntArray {
         array = array1;
     }
     public void atDelete(int pos){
-        System.out.println(pos);
+        int[] numsNew = new int[array.length - 1];
+        if (array.length - 1 < pos) {
+            System.arraycopy(array, 0, numsNew, 0, array.length - 1);
+        } else {
+            System.arraycopy(array, 0, numsNew, 0, pos);
+            System.arraycopy(array, pos + 1, numsNew, pos, array.length - pos - 1);
+        }
+        array = numsNew;
     }
     public int at(int pos){
-        return pos;
+        if (array.length - 1 < pos) {
+            return Integer.MIN_VALUE;
+        }
+        return array[pos];
     }
 
     public static void main(String[] args) {
