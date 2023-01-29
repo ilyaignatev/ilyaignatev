@@ -17,18 +17,19 @@ public class IntArrays {
     }
 
     public static boolean equals1(int[] a1, int[] a2){
-        int b = 0;
-        if(a1.length != a2.length){
+        if (a1==a2) {
+            return true;
+        }
+        if (a1==null || a2==null) {
             return false;
         }
-        for(int i = 0; i < a1.length; i++){
-            for (int j = 0; j < a1.length; j++){
-                if(a1[i] == a2[j]){
-                    b++;
-                }
-            }
-        }if(b != a1.length){
+        int length = a1.length;
+        if (a2.length != length) {
             return false;
+        }
+        for (int i=0; i<length; i++) {
+            if (a1[i] != a2[i])
+                return false;
         }
         return true;
     }
@@ -44,7 +45,7 @@ public class IntArrays {
         int[]b3 = {1,2,3};
         int[]b4 = {1,3,2};
         System.out.println(equals2(b3,b4));
-        System.out.println(equals1(b1,b2));
+        System.out.println(equals2(b1,b2));
     }
 }
 
