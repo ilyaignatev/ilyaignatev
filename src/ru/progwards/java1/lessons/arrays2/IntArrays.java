@@ -42,9 +42,6 @@ public class IntArrays {
         System.out.println(toString(ab));
         int[]b1 = {1,2,3};
         int[]b2 = {1,3,5};
-        int[]b3 = {1,2,3};
-        int[]b4 = {1,3,2};
-        System.out.println(equals2(b3,b4));
         System.out.println(equals2(b1,b2));
     }
 }
