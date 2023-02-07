@@ -4,12 +4,6 @@ public abstract class Animal implements IColor {
     String name;
     double weight;
 
-    enum Color{
-        GRAY,
-        WHITE,
-        RED,
-        BEIGE,
-    }
     enum FoodKind{
         HAY,
         CORN,
