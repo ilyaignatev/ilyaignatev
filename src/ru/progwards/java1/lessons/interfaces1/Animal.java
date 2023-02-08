@@ -1,15 +1,19 @@
 package ru.progwards.java1.lessons.interfaces1;
 
-public abstract class Animal implements IColor {
+public abstract class Animal implements IColor, Comparable{
     String name;
     double weight;
+
+    public Animal(String name) {
+    }
 
     enum FoodKind{
         HAY,
         CORN,
     }
-    public Animal(String name){
+    public Animal(String name, double weight){
         this.name = name;
+        this.weight = weight;
     }
 
     public Animal() {
@@ -19,7 +23,7 @@ public abstract class Animal implements IColor {
     public abstract String kind();
     public abstract String say();
     public String toString(){
-        return "Это " + kind() + " " + name;
+        return "Это " + kind() + " " + this.name + " " + this.weight + " " + getColor();
     }
     public void setWeight(double weight){
         this.weight = weight;
@@ -27,16 +31,9 @@ public abstract class Animal implements IColor {
     public double getWeight(){
         return weight;
     }
-    int compareTo(Animal animal){
-        if(this.weight == animal.weight) {
-            return 0;
-        }
-        if(this.weight > animal.weight){
-            return 1;
-        }
-        else{
-            return -1;
-        }
+    @Override
+    public int compareTo(Animal animal){
+        return Double.compare(this.weight, animal.weight);
     }
     public boolean equals(Animal o){
 

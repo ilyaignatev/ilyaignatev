@@ -25,12 +25,15 @@
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Area.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Circle.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Color.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Comparable.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Cow.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Duck.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Flower.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Hamster.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/IColor.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Rectangle.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/Square.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/interfaces1/TestCompare.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/useclasses/ComplexNumTest.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/useclasses/Count.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/ru/progwards/java1/lessons/useclasses/CountTest.java" charset="UTF-8" />
