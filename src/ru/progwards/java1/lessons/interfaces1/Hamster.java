@@ -2,32 +2,36 @@ package ru.progwards.java1.lessons.interfaces1;
 
 public class Hamster extends Animal {
     public Hamster(String name, double weight) {
-        super(name,weight);
+        super(name, weight);
     }
+
+    public Hamster(String name) {
+        super(name);
+    }
+
     @Override
-    public String kind(){
+    public String kind() {
         return "хомяк";
     }
+
     @Override
-    public String say(){
+    public String say() {
         return "хрум-хрум-хрум";
     }
+
     @Override
-    public FoodKind getFoodKind(){
+    public FoodKind getFoodKind() {
         return FoodKind.CORN;
     }
+
     @Override
-    public double getFoodCoeff(){
+    public double getFoodCoeff() {
         return 0.06;
     }
+
     @Override
-    public Color getColor(){
+    public Color getColor() {
         return Color.BEIGE;
     }
 
-    public static void main(String[] args) {
-        Hamster h1 = new Hamster("Акакий", 0.25);
-        Hamster h2 = new Hamster("Поликарп", 0.32);
-        System.out.println(h1);
-    }
 }
