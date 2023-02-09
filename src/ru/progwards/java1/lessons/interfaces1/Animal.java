@@ -37,7 +37,7 @@ public abstract class Animal implements IColor, Comparable<Animal> {
     public double getWeight() {
         return weight;
     }
-
+    @Override
     public int compareTo(Animal animal) {
         return Double.compare(weight,animal.getWeight());
     }
