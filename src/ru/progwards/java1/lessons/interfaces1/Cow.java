@@ -31,4 +31,8 @@ public class Cow extends Animal {
     public Color getColor() {
         return Color.RED;
     }
+    @Override
+    public double getWeight(){
+        return weight;
+    }
 }

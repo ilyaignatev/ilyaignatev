@@ -33,4 +33,8 @@ public class Duck extends Animal {
     public Color getColor() {
         return Color.GRAY;
     }
+    @Override
+    public double getWeight(){
+        return weight;
+    }
 }

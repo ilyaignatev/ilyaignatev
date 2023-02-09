@@ -33,5 +33,9 @@ public class Hamster extends Animal {
     public Color getColor() {
         return Color.BEIGE;
     }
+    @Override
+    public double getWeight(){
+        return weight;
+    }
 
 }

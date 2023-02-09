@@ -8,8 +8,8 @@ public class TestCompare {
         Duck duck2 = new Duck("Маша"); duck2.setWeight(3.5);
         Hamster ham1 = new Hamster("Акакий"); ham1.setWeight(0.25);
         Hamster ham2 = new Hamster("Поликарп"); ham2.setWeight(0.32);
-        Animal[]animals = new Animal[]{ham1,ham2,duck1,duck2,cow2,cow1};
-        //Arrays.sort(animals);
+        Animal[]animals = new Animal[]{cow1, cow2, duck1, duck2, ham1, ham2};
+        Arrays.sort(animals);
         System.out.println(Arrays.toString(animals));
     }
 }
