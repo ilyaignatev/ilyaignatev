@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.interfaces1;
 
-public abstract class Animal implements IColor, Comparable {
+public abstract class Animal implements IColor, Comparable<Animal> {
     String name;
     double weight;
 
@@ -39,14 +39,7 @@ public abstract class Animal implements IColor, Comparable {
     }
 
     public int compareTo(Animal animal) {
-        if (this.weight == animal.weight) {
-            return 0;
-        }
-        if (this.weight > animal.weight) {
-            return 1;
-        } else {
-            return -1;
-        }
+        return Double.compare(weight,animal.getWeight());
     }
 
     public boolean equals(Animal o) {
