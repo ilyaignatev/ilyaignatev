@@ -12,9 +12,24 @@ public class CompareHome {
     }
 
     public static void main(String[] args) {
-        Cow cow = new Cow("корова");
-        Duck duck = new Duck("утка");
-        Hamster hamster = new Hamster("хомяк");
+        Cow cow = new Cow("корова") {
+            @Override
+            public CompareResult compareWeight(CompareWeight smthHasWeight) {
+                return null;
+            }
+        };
+        Duck duck = new Duck("утка") {
+            @Override
+            public CompareResult compareWeight(CompareWeight smthHasWeight) {
+                return null;
+            }
+        };
+        Hamster hamster = new Hamster("хомяк") {
+            @Override
+            public CompareResult compareWeight(CompareWeight smthHasWeight) {
+                return null;
+            }
+        };
         Hawk hawk = new Hawk();
         System.out.println("Результат сравнения " + cow.getClass().getSimpleName() + " и " + duck.getClass().getSimpleName() + " равен" + " " + true);
         System.out.println("Результат сравнения " + cow.getClass().getSimpleName() + " и " + hamster.getClass().getSimpleName() + " равен" + " " +  false);
