@@ -37,4 +37,9 @@ public class Cow extends Animal {
     }
     @Override
     public String getHome(){ return "ферма"; }
+    @Override
+    public String getString(){
+        return this.name;
+    }
+
 }

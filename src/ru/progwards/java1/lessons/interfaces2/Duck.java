@@ -39,4 +39,9 @@ public class Duck extends Animal {
     }
     @Override
     public String getHome(){ return "ферма";}
+
+    @Override
+    public String getString() {
+        return this.name;
+    }
 }

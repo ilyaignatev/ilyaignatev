@@ -40,4 +40,8 @@ public class Hamster extends Animal {
     @Override
     public String getHome(){ return "поле";}
 
+    @Override
+    public String getString() {
+        return this.name;
+    }
 }
