@@ -29,7 +29,7 @@ public class Time implements ToString{
 
     @Override
     public String getString() {
-        return null;
+        return String.format("%02d:%02d:%02d", hours,minutes,seconds);
     }
 }
 

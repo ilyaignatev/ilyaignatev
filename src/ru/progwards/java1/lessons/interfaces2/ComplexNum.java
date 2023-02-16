@@ -36,6 +36,6 @@ public class ComplexNum implements ToString {
 
     @Override
     public String getString() {
-        return null;
+        return a + "+" + b + "i";
     }
 }
