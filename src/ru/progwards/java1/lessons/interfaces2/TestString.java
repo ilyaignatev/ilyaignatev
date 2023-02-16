@@ -2,7 +2,8 @@ package ru.progwards.java1.lessons.interfaces2;
 
 public class TestString {
     public static void print(ToString any){
-        System.out.println(any.getString());
+        Cow cow2 = new Cow("Пеструшка", 350);
+        System.out.println(cow2.getString());
     }
 
     public static void main(String[] args) {
