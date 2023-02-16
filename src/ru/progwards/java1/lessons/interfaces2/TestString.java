@@ -6,24 +6,9 @@ public class TestString {
     }
 
     public static void main(String[] args) {
-        Cow cow1 = new Cow("Пеструшка") {
-            @Override
-            public CompareResult compareWeight(CompareWeight smthHasWeight) {
-                return null;
-            }
-        };
-        Duck duck1 = new Duck("Даша") {
-            @Override
-            public CompareResult compareWeight(CompareWeight smthHasWeight) {
-                return null;
-            }
-        };
-        Hamster hamster1 = new Hamster("Поликарп") {
-            @Override
-            public CompareResult compareWeight(CompareWeight smthHasWeight) {
-                return null;
-            }
-        };
+        Cow cow1 = new Cow("Пеструшка");
+        Duck duck1 = new Duck("Даша");
+        Hamster hamster1 = new Hamster("Поликарп");
         Time time1 = new Time(1,12,55);
         ComplexNum complexNum = new ComplexNum(22,5);
         System.out.println(cow1);
