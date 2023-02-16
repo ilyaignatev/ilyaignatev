@@ -3,7 +3,7 @@ package ru.progwards.java1.lessons.interfaces2;
 import java.util.Arrays;
 public class TestCompare {
     public static void main(String[] args) {
-        Cow cow1 = new Cow("Пеструшка"); cow1.setWeight(350.0);
+        Cow cow1 = new Cow("Пеструшка",350);
         Cow cow2 = new Cow("Рыжая"); cow2.setWeight(250.0);
         Duck duck1 = new Duck("Даша"); duck1.setWeight(3.0);
         Duck duck2 = new Duck("Маша"); duck2.setWeight(3.5);
