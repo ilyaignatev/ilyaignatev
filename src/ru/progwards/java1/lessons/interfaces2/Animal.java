@@ -70,7 +70,7 @@ public abstract class Animal implements IColor, Comparable<Animal>, Home, ToStri
     abstract public Color getColor();
     abstract public String getHome();
     public  String getString(){
-        return "Это " + kind() + " " + this.name + " " + this.weight + " " + getColor();
+        return toString();
     }
 
     public static void main(String[] args) {
