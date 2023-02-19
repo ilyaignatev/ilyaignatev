@@ -25,7 +25,7 @@ public abstract class Animal implements IColor, Comparable<Animal>, Home, ToStri
     public abstract String kind();
 
     public abstract String say();
-
+@Override
     public String toString() {
         return "Это " + kind() + " " + this.name + " " + this.weight + " " + getColor();
     }
