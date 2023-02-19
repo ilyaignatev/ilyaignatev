@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.interfaces2;
 
-public abstract class Animal implements IColor, Comparable<Animal>, Home, ToString {
+public abstract class Animal implements IColor, Comparable<Animal>, Home, ToString, CompareWeight {
     String name;
     double weight;
 
