@@ -11,10 +11,10 @@ public class TestString {
         Hamster hamster1 = new Hamster("Поликарп");
         Time time1 = new Time(1,12,55);
         ComplexNum complexNum = new ComplexNum(22,5);
-        System.out.println(cow);
-        System.out.println(duck1);
-        System.out.println(hamster1);
-        System.out.println(time1);
-        System.out.println(complexNum);
+        print(cow);
+        print(duck1);
+        print(hamster1);
+        print(time1);
+        print(complexNum);
     }
 }
