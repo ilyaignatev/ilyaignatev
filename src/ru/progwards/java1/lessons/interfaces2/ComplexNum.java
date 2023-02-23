@@ -35,7 +35,7 @@ public class ComplexNum implements ToString {
     }
 
     @Override
-    public String getString() {
+    public String getString(Cow cow) {
         return a + "+" + b + "i";
     }
 }

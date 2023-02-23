@@ -41,7 +41,7 @@ public class Duck extends Animal {
     public String getHome(){ return "ферма";}
 
     @Override
-    public String getString() {
+    public String getString(Cow cow) {
         return this.name;
     }
 }

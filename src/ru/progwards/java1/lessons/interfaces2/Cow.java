@@ -38,8 +38,8 @@ public class Cow extends Animal {
     @Override
     public String getHome(){ return "ферма"; }
     @Override
-    public String getString(){
-        return this.name;
+    public String getString(Cow cow){
+        return this.toString();
     }
 
 }

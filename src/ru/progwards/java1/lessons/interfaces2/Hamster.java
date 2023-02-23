@@ -41,7 +41,7 @@ public class Hamster extends Animal {
     public String getHome(){ return "поле";}
 
     @Override
-    public String getString() {
+    public String getString(Cow cow) {
         return this.name;
     }
 }

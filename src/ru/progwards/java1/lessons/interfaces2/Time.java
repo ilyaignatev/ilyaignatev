@@ -28,7 +28,7 @@ public class Time implements ToString{
     }
 
     @Override
-    public String getString() {
+    public String getString(Cow cow) {
         return String.format("%02d:%02d:%02d", hours,minutes,seconds);
     }
 }
