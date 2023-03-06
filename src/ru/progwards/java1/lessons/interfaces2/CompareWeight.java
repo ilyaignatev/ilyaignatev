@@ -6,5 +6,6 @@ public interface CompareWeight {
         EQUAL,
         GREATER,
     }
+    public CompareResult compareWeight(CompareWeight smthHasWeight);
     public double getWeight();
 }

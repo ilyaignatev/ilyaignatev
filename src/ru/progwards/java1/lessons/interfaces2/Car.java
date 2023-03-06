@@ -8,4 +8,16 @@ public class Car implements CompareWeight{
     public double getWeight(){
         return this.weight;
     }
+    @Override
+    public CompareResult compareWeight(CompareWeight smthHasWeight){
+        if(weight < smthHasWeight.getWeight()){
+            return CompareResult.LESS;
+        }
+        else if(weight == smthHasWeight.getWeight()){
+            return CompareResult.EQUAL;
+        }
+        else {
+            return CompareResult.GREATER;
+        }
+    }
 }
