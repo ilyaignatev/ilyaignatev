@@ -73,6 +73,15 @@ public abstract class Animal implements IColor, Comparable<Animal>, Home, ToStri
     public String getString(){
         return this.toString();
     }
+    @Override
+    public CompareResult compareWeight(CompareWeight smthHasWeight) {
+        if (weight < smthHasWeight.getWeight())
+            return CompareResult.LESS;
+        else if (weight == smthHasWeight.getWeight())
+            return CompareResult.EQUAL;
+        else
+            return CompareResult.GREATER;
+    }
 
     public static void main(String[] args) {
 

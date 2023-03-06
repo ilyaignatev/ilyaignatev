@@ -6,7 +6,7 @@ public class Car implements CompareWeight{
         this.weight = weight;
     }
     public double getWeight(){
-        return this.weight;
+        return weight;
     }
     @Override
     public CompareResult compareWeight(CompareWeight smthHasWeight){
@@ -19,5 +19,11 @@ public class Car implements CompareWeight{
         else {
             return CompareResult.GREATER;
         }
+    }
+    public String toString(){
+        return "Это автомобиль грузоподъемностью" + weight;
+    }
+
+    public static void main(String[] args) {
     }
 }
