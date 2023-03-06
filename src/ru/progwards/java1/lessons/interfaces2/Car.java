@@ -1,7 +1,7 @@
 package ru.progwards.java1.lessons.interfaces2;
 
 public class Car {
-    double weight;
+    private double weight;
     public Car(double weight){
         this.weight = weight;
     }
