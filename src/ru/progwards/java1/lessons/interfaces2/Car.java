@@ -1,6 +1,6 @@
 package ru.progwards.java1.lessons.interfaces2;
 
-public class Car {
+public class Car implements CompareWeight{
     private double weight;
     public Car(double weight){
         this.weight = weight;
