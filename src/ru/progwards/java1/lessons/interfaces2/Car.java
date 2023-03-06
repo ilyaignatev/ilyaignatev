@@ -21,7 +21,7 @@ public class Car implements CompareWeight{
         }
     }
     public String toString(){
-        return "Это автомобиль грузоподъемностью" + weight;
+        return "Это автомобиль грузоподъемностью " + weight;
     }
 
     public static void main(String[] args) {
