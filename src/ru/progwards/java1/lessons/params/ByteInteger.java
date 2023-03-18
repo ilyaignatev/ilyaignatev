@@ -1,4 +1,4 @@
-package ru.progwards.java1.lessons.ru.progwards.java1.lessons;
+package ru.progwards.java1.lessons.params;
 
 public class ByteInteger extends AbsInteger {
     byte num;

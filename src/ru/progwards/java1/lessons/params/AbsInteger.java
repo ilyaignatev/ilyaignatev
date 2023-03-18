@@ -1,4 +1,4 @@
-package ru.progwards.java1.lessons.ru.progwards.java1.lessons;
+package ru.progwards.java1.lessons.params;
 
 public class AbsInteger{
  private int num;
