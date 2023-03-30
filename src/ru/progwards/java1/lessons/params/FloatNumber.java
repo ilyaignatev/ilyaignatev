@@ -14,12 +14,12 @@ public class FloatNumber {
 
     public FloatNumber(String num) {
         char[] chars = num.toCharArray();
-        if (chars[0] != '-') { // положительное число
+        if (chars[0] != '-') { // РїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ
             this.sign = true;
             int dot = num.indexOf(".");
             int ex = num.indexOf("E");
 
-            if (ex != -1) {  //есть степень e
+            if (ex != -1) {  //РµСЃС‚СЊ СЃС‚РµРїРµРЅСЊ e
                 char[] expArray = new char[chars.length - ex];
                 System.arraycopy(chars, ex, expArray, 0, chars.length - exp - 1);
                 char[] mantissaArray = new char[dot - ex];
@@ -28,18 +28,18 @@ public class FloatNumber {
                 String mantissaString = Arrays.toString(mantissaArray);
                 mantissa = Long.parseLong(mantissaString);
                 exp = Integer.parseInt(expString);
-            } else { // нет степени Е
+            } else { // РЅРµС‚ СЃС‚РµРїРµРЅРё Р•
                 char[] mantissaArray = new char[chars.length - dot];
                 System.arraycopy(chars, dot, mantissaArray, 0, chars.length - dot);
                 String mantissaString = Arrays.toString(mantissaArray);
                 mantissa = Long.parseLong(mantissaString);
             }
-        } else { // отрицательное число
+        } else { // РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ
             this.sign = false;
             int dot = num.indexOf(".");
             int ex = num.indexOf("E");
 
-            if (ex != -1) {  //есть степень e
+            if (ex != -1) {  //РµСЃС‚СЊ СЃС‚РµРїРµРЅСЊ e
                 char[] expArray = new char[chars.length - ex];
                 System.arraycopy(chars, ex, expArray, 0, chars.length - ex);
                 char[] mantissaArray = new char[ex - dot];
@@ -48,7 +48,7 @@ public class FloatNumber {
                 String mantissaString = Arrays.toString(mantissaArray);
                 mantissa = Long.parseLong(mantissaString);
                 exp = Integer.parseInt(expString);
-            } else { // Нет степени Е
+            } else { // РќРµС‚ СЃС‚РµРїРµРЅРё Р•
                 char[] mantissaArray = new char[chars.length - dot];
                 System.arraycopy(chars, dot, mantissaArray, 0, chars.length - dot);
                 String mantissaString = Arrays.toString(mantissaArray);
@@ -65,7 +65,7 @@ public class FloatNumber {
 
     public static void main(String[] args) {
         String str = "-123.456";
-        FloatNumber fn3 = new FloatNumber("123.3Е3");
+        FloatNumber fn3 = new FloatNumber("123.3Р•3");
         System.out.println(fn3.toString());
 
     }
