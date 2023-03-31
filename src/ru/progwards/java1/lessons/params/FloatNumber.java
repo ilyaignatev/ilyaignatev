@@ -1,76 +1,115 @@
 package ru.progwards.java1.lessons.params;
-import java.util.Arrays;
 
 public class FloatNumber {
     boolean sign;
     long mantissa;
     int exp;
-
-    public FloatNumber(boolean sign, long mantissa, int exp) {
-        this.sign = sign;
-        this.mantissa = mantissa;
-        this.exp = exp;
+    FloatNumber(boolean sing, long mantissa, int exp){
+        this.sign=sing;
+        this.mantissa=mantissa;
+        this.exp=exp;
     }
-
     FloatNumber(String num){
-        num = num.trim().replace(",", "").replace(".", "");
-        char[] cl = num.toCharArray();
-        if(cl[0] == '-')
-            sign = false;
-        else
-            sign = true;
-        String r = "";
-        String r0 = "";
-        for (int i = sign ? 0 : 1; i < cl.length; i++){
-            if(Character.isDigit(cl[i]))
-                r += cl[i];
-            else {
-                for (int j = i+1; j < cl.length; j++){
-                    r0 += cl[j];
+        char[] result = num.toCharArray();
+        String tempStr1 = "",tempStr2 = "";
+        if (result[0]== '-'){
+            this.sign=false;
+        }
+        else this.sign=true;
+
+        int j=0,point=0,tail=0;
+        if ((result[0]== '-')||(result[0]== '+')) {
+            for (int i = 1; i < result.length; i++) {
+                if ((result[i] != 'E') & (result[i] != 'Е') & (result[i] != 'e')) {
+                    if (result[i] == '.') {
+                        point = i;
+                        continue;
+                    } else {
+                        tempStr1 += result[i];
+                        tail = i - point;
+                    }
+                } else {
+                    j = i + 2;
+                    break;
                 }
-                break;
+            }
+            this.mantissa = Long.parseLong(tempStr1);
+            if ((j !=0) && (j < result.length)) {
+                for (; j < result.length; j++) {
+                    tempStr2 += result[j];
+                }
+            }
+            else tempStr2 = "0";
+            this.exp = Integer.parseInt(tempStr2);
+
+            if (point != 0) {
+                exp = exp - tail;
             }
         }
-        mantissa = Long.parseLong(r);
-        exp = Integer.parseInt(r0);
-    }
+        else {
+            for (int i = 0; i < result.length; i++) {
+                if ((result[i] != 'E') & (result[i] != 'Е')& (result[i] != 'e')) {
+                    if (result[i] == '.') {
+                        point = i;
+                        continue;
+                    } else {
+                        tempStr1 += result[i];
+                        j = i + 2;
+                        tail = i - point;
+                    }
+                }
+                else break;
+            }
+            this.mantissa = Long.parseLong(tempStr1);
 
+            if ((j !=0) && (j < result.length)) {
+                for (; j < result.length; j++) {
+                    tempStr2 += result[j];
+                }
+            }
+            else tempStr2 = "0";
+            this.exp = Integer.parseInt(tempStr2);
+            if (point != 0) {
+                exp = exp - tail;
+            }
+        }
+    }
     @Override
-    public String toString() {
-        String res = "";
-        if(!sign)
-            res += "-";
-        char[] cl = Long.toString(mantissa).toCharArray();
-        res += cl[0] + ".";
-        for (int i = 1; i < cl.length; i++){
-            res += cl[i];
+    public String toString(){
+        String first="",fin;
+        int exp2=0;
+        String q=String.valueOf(mantissa), rest=q.substring(1);
+        char second = q.charAt(0);
+        if (!sign) first="-";
+        exp2=exp+rest.length();
+        if (exp2!=0){
+            fin= first+second+"."+rest+"E"+exp2;
         }
-        if(exp != 0) {
-            res += "E" + exp;
-        }
-        return res;
+        else fin= first+second+"."+rest;
+        return fin;
     }
-
     double toDouble(){
-        return Double.parseDouble(this.toString());
+        double d;
+        return d = Double.parseDouble(toString());
     }
-
     void fromDouble(double num){
-        FloatNumber res = new FloatNumber(Double.toString(num));
-        this.sign = res.sign;
-        this.mantissa = res.mantissa;
-        this.exp = res.exp;
-    }
 
+        String vr = String.valueOf(num);
+        new FloatNumber(vr);
+    }
     void negative(){
-        sign = !sign;
+        if (!sign){
+            sign=true;
+        }
+        else sign=false;
     }
-
     FloatNumber add(FloatNumber num){
-        return new FloatNumber((this.toDouble() + num.toDouble()) + "");
+        double a =toDouble()+num.toDouble();
+        String str= String.valueOf(a);
+        return new FloatNumber(str);
     }
-
     FloatNumber sub(FloatNumber num){
-        return new FloatNumber((this.toDouble() - num.toDouble()) + "");
+        num.negative();
+        return add(num);
     }
 }
