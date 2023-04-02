@@ -112,4 +112,9 @@ public class FloatNumber {
         num.negative();
         return add(num);
     }
+
+    public static void main(String[] args) {
+        FloatNumber floatNumber = new FloatNumber(true, 24522,4);
+        System.out.println(floatNumber);
+    }
 }
