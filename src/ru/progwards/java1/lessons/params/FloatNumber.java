@@ -44,7 +44,7 @@ public class FloatNumber {
         for (int i = 1; i < cl.length; i++){
             res += cl[i];
         }
-        if(exp != 0) {
+        if(exp != 1) {
             res += "E" + exp;
         }
         return res;
