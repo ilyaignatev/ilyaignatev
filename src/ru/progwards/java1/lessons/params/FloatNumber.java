@@ -44,7 +44,7 @@ public class FloatNumber {
         for (int i = 1; i < cl.length; i++){
             res += cl[i];
         }
-        if(exp != 1) {
+        if(exp != 0) {
             res += "E" + exp;
         }
         return res;
@@ -76,9 +76,4 @@ public class FloatNumber {
         return new FloatNumber(String.format("%.3E", this.toDouble() - num.toDouble()));
     }
 
-    public static void main(String[] args) {
-        FloatNumber fn2 = new FloatNumber(true, 25697, 3);
-        System.out.println(fn2.toDouble());
-
-    }
 }
